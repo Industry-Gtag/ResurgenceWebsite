@@ -1,0 +1,73 @@
+const viewAllBtn = document.getElementById('viewAllBtn');
+const category = card.dataset.category;
+const categoriesContainer = document.querySelector('.categories');
+
+categoriesContainer.classList.add('single-category');
+
+document.querySelectorAll('.feature-category').forEach(c => {
+  c.style.display = c.dataset.category === category ? 'block' : 'none';
+});
+
+viewAllBtn.style.display = 'block';
+
+const categoryName = e.target.textContent.trim();
+const categoryId = categoryMap[categoryName];
+
+if (categoryId) {
+  const categoriesContainer = document.querySelector('.categories');
+  categoriesContainer.classList.add('single-category');
+  
+  document.querySelectorAll('.feature-category').forEach(c => {
+    c.style.display = c.dataset.category === categoryId ? 'block' : 'none';
+  });
+  
+  document.getElementById('viewAllBtn').style.display = 'block';
+}
+
+document.querySelectorAll('.feature-category').forEach(c => {
+  c.style.display = c.dataset.category === 'main' ? 'block' : 'none';
+});
+
+document.getElementById('viewAllBtn').style.display = 'block';
+
+document.querySelectorAll('.feature-category').forEach(c => {
+  c.style.display = c.dataset.category === 'main' ? 'block' : 'none';
+});
+
+document.getElementById('viewAllBtn').style.display = 'block';
+
+if(e.target.tagName === 'LI') {
+  return;
+}
+
+const viewAllBtn = document.getElementById('viewAllBtn');
+const category = card.dataset.category;
+const categoriesContainer = document.querySelector('.categories');
+
+categoriesContainer.classList.add('single-category');
+
+document.querySelectorAll('.feature-category').forEach(c => {
+  c.style.display = c.dataset.category === category ? 'block' : 'none';
+});
+
+viewAllBtn.style.display = 'block';
+
+const categoryName = e.target.textContent.trim();
+const categoryId = categoryMap[categoryName];
+
+if (categoryId) {
+  const categoriesContainer = document.querySelector('.categories');
+  categoriesContainer.classList.add('single-category');
+  
+  document.querySelectorAll('.feature-category').forEach(c => {
+    c.style.display = c.dataset.category === categoryId ? 'block' : 'none';
+  });
+  
+  document.getElementById('viewAllBtn').style.display = 'block';
+}
+
+document.querySelectorAll('.feature-category').forEach(c => {
+  c.style.display = c.dataset.category === 'main' ? 'block' : 'none';
+});
+
+document.getElementById('viewAllBtn').style.display = 'block';
